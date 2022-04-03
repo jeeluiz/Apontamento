@@ -1,6 +1,5 @@
 version: '3.9'
 services:
-
   db.apontamento:
     container_name: db.apontamento
     restart: unless-stopped
