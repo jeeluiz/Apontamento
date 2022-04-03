@@ -19,16 +19,18 @@
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development",
-                "ASPNETCORE_URLS": "http://+:5001;https://+:5002",
+                "ASPNETCORE_URLS": "http://localhost:5001;https://localhost:5002",
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
-            },
-            "linux": {
-                "env": {
-                    "ConnectionStrings__DefaultConnection": "Server=localhost,6433;Database=aspnet-Apontamento;User Id=sa;Password=yourStrongPassword!"
-                }
             }
+            // ,
+            // "linux": {
+            //     "env": {
+            //         "ASPNETCORE_Kestrel__Certificates__Default__Password": "",
+            //         "ASPNETCORE_Kestrel__Certificates__Default__Path": "${env:HOME}/.aspnet/https/localhost.pfx"
+            //     }
+            // }
         },
         {
             "name": ".NET Core Attach",
