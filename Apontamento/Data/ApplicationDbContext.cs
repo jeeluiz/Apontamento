@@ -8,6 +8,10 @@ namespace Apontamento.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+            if(Database.GetPendingMigrations().Any())
+            {
+                Database.Migrate();
+            }
         }
     }
 }
